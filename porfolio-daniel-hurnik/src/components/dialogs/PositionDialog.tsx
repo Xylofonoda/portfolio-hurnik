@@ -1,6 +1,6 @@
 import React from "react";
-import type { ModalProps } from "../components/sections/About";
-import SkillsAcquired from "../components/helper-components/SkilllsAcquired";
+import type { ModalProps } from "../sections/About";
+import SkillsAcquired from "../helper-components/SkilllsAcquired";
 
 const PositionDialog: React.FunctionComponent<ModalProps> = (props) => {
 	return <>

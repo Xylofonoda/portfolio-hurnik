@@ -1,9 +1,9 @@
 import React from "react";
 import Modal from "../helper-components/Modal";
-import PositionDialog from "../../dialogs/PositionDialog";
 import { frontendSkills, overallSkills } from "../../consts/Skills";
 import WorkExperience from "../helper-components/WorkExperience";
 import SkillsAcquired from "../helper-components/SkilllsAcquired";
+import PositionDialog from "../dialogs/PositionDialog";
 
 export interface ModalProps {
 	isOpen: boolean;

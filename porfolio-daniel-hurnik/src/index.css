@@ -59,18 +59,16 @@ body {
 .modal-content {
 	background: black;
 	overflow-y: auto;
-	max-height: 90vh;
-	border-radius: 0.75rem; /* rounded-xl */
-	padding: 2rem; /* p-8 */
+	max-height: 85vh;
+	border-radius: 0.75rem;
+	padding: 2rem; 
 	min-width: 300px;
 	min-height: 100px;
 	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
-	border: 1px solid rgba(255, 255, 255, 0.1); /* border-white/10 */
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	transform: translateY(40px) scale(0.98);
 	opacity: 0;
-	/* transition: all 0.3s ease;  */
 }
 .modal-content.open {
 	opacity: 1;
-	/* transform: translateY(0) scale(1); */
 }
