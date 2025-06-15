@@ -9,7 +9,7 @@ const LoadingScreen: React.FunctionComponent<LoadingScreenProps> = (props) => {
 	const [coffeeClicked, setCoffeeClicked] = React.useState(false);
 	const [showCoffee, setShowCoffee] = React.useState(false);
 	const firstText = "Portfolio loading, grab a coffee.. -> ";
-	const secondText = "Hit the spot, right ? Let's go!";
+	const secondText = "Beatiful, let's get started!";
 
 	const animateText = (text: string, onComplete?: () => void) => {
 		let index = 0;

@@ -1,0 +1,77 @@
+import React from "react";
+import Modal from "../helper-components/Modal";
+import PositionDialog from "../../dialogs/PositionDialog";
+import { frontendSkills, overallSkills } from "../../consts/Skills";
+import WorkExperience from "../helper-components/WorkExperience";
+import SkillsAcquired from "../helper-components/SkilllsAcquired";
+
+export interface ModalProps {
+	isOpen: boolean;
+	acquiredSkills?: string[];
+	positionDescription?: string;
+	positionTitle?: string;
+	personalAdvancements?: string[];
+	totalStayInPosition?: string;
+}
+
+const About: React.FunctionComponent = () => {
+
+	const emptyModalProps: ModalProps = {
+		isOpen: false,
+		acquiredSkills: [],
+		positionDescription: "",
+		positionTitle: "",
+		personalAdvancements: [],
+		totalStayInPosition: "",
+	};
+
+	const [modalOpen, setModalOpen] = React.useState<ModalProps>(emptyModalProps);
+
+	return (
+		<>
+			<section
+				id="about"
+				className="min-h-screen flex items-center justify-center py-20"
+			>
+				<div className="max-w-3xl mx-auto px-4">
+					<h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-emerald-600 text-center bg-clip-text text-transparent">
+						About Me
+					</h2>
+					<div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+						<p className="text-gray-300 mb-6">
+							Self taught frontend developer with a passion for creating beautiful and functional web applications.
+						</p>
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<SkillsAcquired
+								acquiredSkills={frontendSkills}
+								typeOfSkills="Frontend"
+							/>
+							<SkillsAcquired
+								acquiredSkills={overallSkills}
+								typeOfSkills="Overall"
+							/>
+						</div>
+					</div>
+					<WorkExperience
+						setModalOpen={setModalOpen}
+					/>
+				</div>
+			</section>
+			<Modal
+				isOpen={modalOpen.isOpen}
+				onClose={() => setModalOpen({ isOpen: false })}
+			>
+				<PositionDialog
+					isOpen={modalOpen.isOpen}
+					acquiredSkills={modalOpen.acquiredSkills}
+					personalAdvancements={modalOpen.personalAdvancements}
+					positionDescription={modalOpen.positionDescription}
+					positionTitle={modalOpen.positionTitle}
+					totalStayInPosition={modalOpen.totalStayInPosition}
+				/>
+			</Modal>
+		</>
+	);
+};
+
+export default About;

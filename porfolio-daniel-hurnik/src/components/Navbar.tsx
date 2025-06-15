@@ -1,5 +1,5 @@
 import React from "react";
-import MenuItems from "./MenuItems";
+import MenuItems from "./helper-components/MenuItems";
 
 interface NavbarProps {
 	menuOpen: boolean;
@@ -28,10 +28,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = (props) => {
 						{!props.menuOpen ? <i className="fa-solid fa-bars " /> : null}
 					</div>
 					<div className="hidden md:flex items-center space-x-8">
-						<MenuItems
-							setMenuOpen={props.setMenuOpen}
-							menuOpen={props.menuOpen}
-						/>
+						<MenuItems />
 					</div>
 				</div>
 			</div>

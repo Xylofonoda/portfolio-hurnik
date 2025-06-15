@@ -1,5 +1,5 @@
 import React from "react";
-import MenuItems from "./MenuItems";
+import MenuItems from "./helper-components/MenuItems";
 
 interface MobileMenuProps {
 	menuOpen: boolean;
