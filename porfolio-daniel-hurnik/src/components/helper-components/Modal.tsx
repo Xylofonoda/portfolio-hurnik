@@ -33,6 +33,13 @@ const Modal: React.FunctionComponent<ModalProps> = (props) => {
 				role="dialog"
 				aria-modal="true"
 			>
+				<button
+					className="absolute top-1 right-6 text-white text-3xl focus:outline-none cursor-pointer"
+					onClick={props.onClose}
+					aria-label="Close modal"
+				>
+					<i className="fa-solid fa-times text-lg" />
+				</button>
 				{props.children}
 			</div>
 		</div>
