@@ -2,12 +2,13 @@ import React from 'react';
 
 interface SkillsAcquiredProps {
     acquiredSkills: string[];
-    typeOfSkills?: "Frontend" | "Overall" | "Personal Advancements";
+    typeOfSkills?: string;
+    className?: string;
 }
 
 
 const SkillsAcquired: React.FunctionComponent<SkillsAcquiredProps> = (props) => {
-    return <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+    return <div className={`${props.className ? props.className : "rounded-xl p-6 hover:-translate-y-1 transition-all"} `}>
         <h3 className="text-xl font-bold mb-4">{props.typeOfSkills}</h3>
         <div className="flex flex-wrap gap-2">
             {props.acquiredSkills.map((skill, key) => {

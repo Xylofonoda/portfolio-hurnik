@@ -28,3 +28,17 @@ export const overallSkills = [
     "Problem Solving",
     "Communication",
 ];
+
+export const portfolioTechAndSkills = [
+    "React",
+    "Typescript",
+    "TailwindCSS",
+    "HTML",
+    "Github",
+    "CSS",
+    "Javascript",
+    "FontAwesome",
+    "DRY",
+    "Vite",
+    "npm"
+];

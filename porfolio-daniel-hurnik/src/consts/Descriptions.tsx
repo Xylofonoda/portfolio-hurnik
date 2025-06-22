@@ -1,20 +1,28 @@
 export const FIRSTIS_DESC = `
-I am currently part of a cross-functional team of five frontend and five backend developers working on three distinct SaaS products, all under a unified initiative called RSV — a comprehensive platform designed to manage and automate business processes within the construction industry.
-As a frontend developer, my responsibilities have spanned multiple areas: I have collaborated closely with fellow developers and our UX/UI designer to design and implement user-centric solutions. I actively participated in key strategic meetings with our CEO and CTO, contributing insights on product development and technical feasibility.
-I have been actively involved in the development and maintenance of the frontend architecture across our SaaS products — contributing to the implementation of user interfaces, new features, bug fixes, and ensuring high standards of code quality and performance. Additionally, I have supported the creation and upkeep of internal tools and shared libraries that streamline our team’s efficiency and development workflow.
-Throughout this experience, I’ve strengthened my technical proficiency in React, TypeScript, Tailwind CSS, Redux, Jest, Webpack, Vite, and React Query. I have also gained valuable expertise in performance optimization, scalable design systems, and collaborative development practices.
-Moreover, I played an active role in defining our testing workflow and documentation standards. This included drafting bug reporting templates, establishing testing guidelines, and mentoring junior QA testers on prioritization and classification of defects to ensure clear and actionable feedback.
+ - Part of a cross-functional team (5 FE, 5 BE) building 3 SaaS products under RSV — a unified platform for automating construction industry workflows
+ - Designed and implemented user interfaces in close collaboration with frontend team and UX/UI designer
+ - Contributed to frontend architecture and codebase consistency across all RSV products
+ - Participated in strategic product meetings with CEO/CTO, providing technical input on feasibility and implementation paths
+ - Built and maintained shared internal tools and reusable frontend libraries to streamline development
+ - Created a GitHub Action that posts PR notifications to a Microsoft Teams channel to improve team awareness and streamline code reviews
+ - Authored bug reporting templates and testing guidelines to standardize QA communication
+ - Used React Query for efficient server-state management in complex UIs
+ - Mentored junior QA testers on defect prioritization and classification for improved feedback loops
 `
 
 export const OKAY_DESC = `
-   Although my tenure in this position has been relatively short, it has provided me with meaningful exposure to e-commerce development. My primary focus has been on improving the user experience and functionality of an online store built on the Shopify platform. I have worked extensively with Liquid, Shopify’s templating language, to customize themes and develop new features tailored to business needs. In addition, I have collaborated closely with the design team to ensure the website remains visually engaging and intuitive for end users.
+   - Gained hands-on experience in e-commerce development through work on a Shopify-based online store
+   - Focused on enhancing user experience and core functionality to align with business goals
+   - Customized themes and built new features using Liquid, Shopify’s templating language
+   - Collaborated with the design team to maintain a visually engaging and user-friendly interface
 `
 
 export const WEBDEVEL_DESC = `
-I have been working as a Frontend Developer at Webdevel s.r.o. for over two years, contributing to a range of projects with a primary focus on Vue.js. My responsibilities have included developing and maintaining web applications, collaborating with designers and backend developers, and ensuring our products meet high standards of quality and performance.
-Beyond frontend development, I have gained practical experience in managing live websites — including tasks related to web hosting, WordPress administration, and e-commerce solutions. This exposure has provided me with a well-rounded understanding of the full web development lifecycle, from design through deployment.
-I have also taken an active role in mentoring junior developers, supporting their technical growth and helping them contribute effectively to team goals. I take pride in fostering a collaborative, knowledge-sharing environment that drives continuous improvement.
-My role has also included helpdesk support, where I assisted clients with technical issues and provided solutions aimed at improving their experience with our products.
-Additionally, I have participated in the hiring process, contributing to candidate evaluations in terms of both technical competency and team fit. This involvement has strengthened my understanding of effective team-building and the traits that contribute to successful development teams.
-Client engagement has been another key aspect of my position. I’ve been responsible for gathering requirements, facilitating communication, and aligning our solutions with client expectations — helping me develop strong interpersonal skills and a customer-focused mindset.
+- Over 2 years of frontend development with a focus on Vue.js across multiple projects
+- Built and maintained web applications in collaboration with designers and backend developers
+- Managed live websites, including web hosting, WordPress, and e-commerce platforms
+- Mentored junior developers and promoted a collaborative, knowledge-sharing environment
+- Provided helpdesk support and resolved client technical issues efficiently
+- Participated in hiring by evaluating candidates for technical and team fit
+- Engaged directly with clients to gather requirements and align solutions with expectations
 `

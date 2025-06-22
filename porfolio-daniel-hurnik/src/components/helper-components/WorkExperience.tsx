@@ -25,7 +25,7 @@ const WorkExperience: React.FunctionComponent<WorkExperienceProps> = (props) => 
                 <li>
                     <WorkPosition
                         onModalOpen={props.setModalOpen}
-                        positionTitle={"Ecommerce developer at OKAY Holding s.r.o."}
+                        positionTitle={"Web/Ecommerce developer at OKAY Holding s.r.o."}
                         totalStayInPosition={"2023 - 2023"}
                         acquiredSkills={["JQuery", "Liquid", "Shopify"]}
                         personalAdvancements={[]}
