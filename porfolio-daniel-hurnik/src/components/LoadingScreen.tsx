@@ -9,9 +9,9 @@ const LoadingScreen: React.FunctionComponent<LoadingScreenProps> = (props) => {
 	const [coffeeClicked, setCoffeeClicked] = React.useState(false);
 	const [showCoffee, setShowCoffee] = React.useState(false);
 	const firstText = "Portfolio loading, grab a coffee.. -> ";
-	const secondText = "..... You spilled it.. well, here's the portfolio anyway 🎉";
+	const secondText = "Beatiful, let's get started!";
 
-	const animateText = (text: string, onComplete?: () => void) => {
+	function animateText(text: string, onComplete?: () => void) {
 		let index = 0;
 		const interval = setInterval(() => {
 			setText(text.substring(0, index));
@@ -24,7 +24,7 @@ const LoadingScreen: React.FunctionComponent<LoadingScreenProps> = (props) => {
 			}
 		}, 100);
 		return () => clearInterval(interval);
-	};
+	}
 
 	React.useEffect(() => {
 		animateText(firstText, () => setShowCoffee(true));
