@@ -22,12 +22,12 @@ export const MAIN_URL = `https://xylofonoda.github.io/portfolio-hurnik`
 function App() {
 	const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
 	const [isLoaded, setIsLoaded] = React.useState<boolean>(() => {
-		const stored = window.localStorage.getItem("isLoaded");
+		const stored = window.sessionStorage.getItem("isLoaded");
 		return stored === "true";
 	});
 
 	const saveToLocalStorage = (key: string, value: string) => {
-		window.localStorage.setItem(key, value);
+		window.sessionStorage.setItem(key, value);
 	};
 
 	React.useEffect(() => {
