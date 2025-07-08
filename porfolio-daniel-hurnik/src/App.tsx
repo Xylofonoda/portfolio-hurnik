@@ -17,9 +17,10 @@ import Projects from "./components/sections/Projects";
 import Contacts from "./components/sections/Contacts";
 import Footer from "./components/sections/Footer";
 
+export const MAIN_URL = `https://xylofonoda.github.io/portfolio-hurnik`
+
 function App() {
 	const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
-	// Save an item to localStorage
 	const [isLoaded, setIsLoaded] = React.useState<boolean>(() => {
 		const stored = window.localStorage.getItem("isLoaded");
 		return stored === "true";

@@ -1,4 +1,5 @@
 import { ArrowUp, File, Github, Linkedin } from "lucide-react";
+import { MAIN_URL } from "../../App";
 
 const Footer = () => {
     return (
@@ -10,7 +11,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/daniel-hurník-077b27231/" className="hover:text-blue-500 transition-colors" target="_blank"><Linkedin /></a>
                 <a href="https://github.com/Xylofonoda" className="hover:text-blue-500 transition-colors" target="_blank"><Github /></a>
                 <a
-                    href="/resumedanielhurnik.pdf"
+                    href={`${MAIN_URL}/resumedanielhurnik.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className=" hover:text-blue-500 transition-colors"
