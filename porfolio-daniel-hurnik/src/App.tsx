@@ -1,4 +1,5 @@
 import React from "react";
+import { Toaster } from 'react-hot-toast';
 
 // Required imports
 
@@ -14,10 +15,26 @@ import Home from "./components/sections/Home";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contacts from "./components/sections/Contacts";
+import Footer from "./components/sections/Footer";
 
 function App() {
-	const [isLoaded, setIsLoaded] = React.useState<boolean>(false);
 	const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
+	// Save an item to localStorage
+	const [isLoaded, setIsLoaded] = React.useState<boolean>(() => {
+		const stored = window.localStorage.getItem("isLoaded");
+		return stored === "true";
+	});
+
+	const saveToLocalStorage = (key: string, value: string) => {
+		window.localStorage.setItem(key, value);
+	};
+
+	React.useEffect(() => {
+		if (isLoaded) {
+			saveToLocalStorage("isLoaded", "true");
+		}
+	}, [isLoaded]);
+
 
 	return (
 		<>
@@ -38,6 +55,9 @@ function App() {
 				<About />
 				<Projects />
 				<Contacts />
+				{/* <ContactSection /> */}
+				<Footer />
+				<Toaster />
 			</div>
 		</>
 	);

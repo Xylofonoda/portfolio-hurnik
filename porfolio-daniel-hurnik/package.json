@@ -1,5 +1,6 @@
 {
   "name": "porfolio-daniel-hurnik",
+  "homepage": "https://xylofonoda.github.io/portfolio-hurnik",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.6",
@@ -19,8 +22,11 @@
     "@mui/icons-material": "^7.1.1",
     "@tailwindcss/vite": "^4.1.8",
     "emailjs-com": "^3.2.0",
+    "formik": "^2.4.6",
+    "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hot-toast": "^2.5.2",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
