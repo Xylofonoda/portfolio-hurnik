@@ -1,4 +1,4 @@
-import { FIRSTIS_DESC, OKAY_DESC, WEBDEVEL_DESC } from "../../consts/Descriptions";
+import { FIRSTIS_DESC, WEBDEVEL_DESC } from "../../consts/Descriptions";
 import type { ModalProps } from "../sections/About";
 import WorkPosition from "./WorkPosition";
 
@@ -17,7 +17,18 @@ const WorkExperience: React.FunctionComponent<WorkExperienceProps> = (props) => 
                         onModalOpen={props.setModalOpen}
                         positionTitle={"Frontend Developer at First Information System s.r.o."}
                         totalStayInPosition={"2023 - Present"}
-                        acquiredSkills={["React", "Typescript", "Tailwind CSS", "Redux", "Jest", "Webpack", "Vite", "React-query"]}
+                        acquiredSkills={
+                            [
+                                "React",
+                                "Typescript",
+                                "Tailwind CSS",
+                                "Redux",
+                                "Jest",
+                                "Webpack",
+                                "Vite",
+                                "React-query"
+                            ]
+                        }
                         personalAdvancements={["Improved code quality", "Enhanced team collaboration", "Optimized performance"]}
                         positionDescription={FIRSTIS_DESC}
                     />
@@ -25,19 +36,26 @@ const WorkExperience: React.FunctionComponent<WorkExperienceProps> = (props) => 
                 <li>
                     <WorkPosition
                         onModalOpen={props.setModalOpen}
-                        positionTitle={"Web/Ecommerce developer at OKAY Holding s.r.o."}
-                        totalStayInPosition={"2023 - 2023"}
-                        acquiredSkills={["JQuery", "Liquid", "Shopify"]}
-                        personalAdvancements={[]}
-                        positionDescription={OKAY_DESC}
-                    />
-                </li>
-                <li>
-                    <WorkPosition
-                        onModalOpen={props.setModalOpen}
                         positionTitle={"Frontend Developer/HR/Tester/Project Manager at Webdevel s.r.o."}
                         totalStayInPosition={"2021 - 2023"}
-                        acquiredSkills={["Vue.js", "Bitbucket", "PHP", "Laravel", "MySQL", "Webhosting", "Wordpress", "HTML", "CSS", "Javascript", "Git", "Vuetify", "Boostrap", "Sass",]}
+                        acquiredSkills={
+                            [
+                                "Vue.js",
+                                "Bitbucket",
+                                "PHP",
+                                "Laravel",
+                                "MySQL",
+                                "Webhosting",
+                                "Wordpress",
+                                "HTML",
+                                "CSS",
+                                "Javascript",
+                                "Git",
+                                "Vuetify",
+                                "Boostrap",
+                                "Sass",
+                            ]
+                        }
                         personalAdvancements={["Project management", "Hiring process", "Mentoring", "Meeting deadlines", "Team management"]}
                         positionDescription={WEBDEVEL_DESC}
                     />

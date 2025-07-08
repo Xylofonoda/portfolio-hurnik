@@ -9,16 +9,8 @@ export const FIRSTIS_DESC = `
  - Used React Query for efficient server-state management in complex UIs
  - Mentored junior QA testers on defect prioritization and classification for improved feedback loops
 `
-
-export const OKAY_DESC = `
-   - Gained hands-on experience in e-commerce development through work on a Shopify-based online store
-   - Focused on enhancing user experience and core functionality to align with business goals
-   - Customized themes and built new features using Liquid, Shopify’s templating language
-   - Collaborated with the design team to maintain a visually engaging and user-friendly interface
-`
-
 export const WEBDEVEL_DESC = `
-- Over 2 years of frontend development with a focus on Vue.js across multiple projects
+- Focus on Frontend development with Vue.js across multiple projects
 - Built and maintained web applications in collaboration with designers and backend developers
 - Managed live websites, including web hosting, WordPress, and e-commerce platforms
 - Mentored junior developers and promoted a collaborative, knowledge-sharing environment
