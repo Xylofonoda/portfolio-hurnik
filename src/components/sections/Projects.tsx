@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import Column from "../helper-components/Column";
 import SkillsAcquired from "../helper-components/SkilllsAcquired";
@@ -11,6 +12,7 @@ interface Project {
     github: string;
     live?: string;
     wip?: boolean;
+    easterEgg?: boolean;
 }
 
 const PROJECTS: Omit<Project, "title" | "description">[] = [
@@ -22,6 +24,7 @@ const PROJECTS: Omit<Project, "title" | "description">[] = [
     {
         skills: ["React", "TypeScript", "Redux Toolkit", "Tailwind", "shadcn/ui", "Supabase", "OpenAI"],
         github: "https://github.com/Xylofonoda/transaction-risk-dashboard",
+        live: "https://pulseriskdashboard.netlify.app/",
     },
     {
         skills: ["TypeScript", "Monorepo"],
@@ -30,6 +33,7 @@ const PROJECTS: Omit<Project, "title" | "description">[] = [
     {
         skills: ["React", "TypeScript", "Tailwind CSS", "Vite"],
         github: "https://github.com/Xylofonoda/portfolio-hurnik",
+        easterEgg: true,
     },
 ];
 
@@ -37,6 +41,7 @@ const Projects: React.FunctionComponent = () => {
     const { language } = useLanguage();
     const t = translations[language];
     const projects = PROJECTS.map((p, i) => ({ ...p, ...t.projects.items[i] }));
+    const [easterEggVisible, setEasterEggVisible] = useState<string | null>(null);
     return (
         <Column title={t.columns.projects}>
             <div className="space-y-3">
@@ -94,6 +99,34 @@ const Projects: React.FunctionComponent = () => {
                                     >
                                         <ExternalLink size={14} />
                                     </a>
+                                )}
+                                {project.easterEgg && (
+                                    <div
+                                        className="relative"
+                                        onMouseEnter={() => setEasterEggVisible(project.title)}
+                                        onMouseLeave={() => setEasterEggVisible(null)}
+                                    >
+                                        <button
+                                            aria-label="Easter egg"
+                                            className="transition-colors duration-200 cursor-default"
+                                            style={{ color: easterEggVisible === project.title ? "var(--color-text)" : "var(--color-dim)" }}
+                                        >
+                                            <ExternalLink size={14} />
+                                        </button>
+                                        {easterEggVisible === project.title && (
+                                            <div
+                                                className="absolute right-0 bottom-full mb-2 px-2 py-1 rounded text-[10px] whitespace-nowrap pointer-events-none"
+                                                style={{
+                                                    zIndex: 9999,
+                                                    background: "var(--color-surface)",
+                                                    color: "var(--color-text)",
+                                                    border: "1px solid var(--color-border-strong)",
+                                                }}
+                                            >
+                                                you're already here dummy
+                                            </div>
+                                        )}
+                                    </div>
                                 )}
                             </div>
                         </div>
