@@ -34,7 +34,8 @@ const Modal: React.FunctionComponent<ModalProps> = (props) => {
 				aria-modal="true"
 			>
 				<button
-					className="absolute top-1 right-6 text-white text-3xl focus:outline-none cursor-pointer"
+					className="absolute top-1 right-6 text-3xl focus:outline-none cursor-pointer transition-opacity duration-200 hover:opacity-60"
+					style={{ color: "var(--color-text)" }}
 					onClick={props.onClose}
 					aria-label="Close modal"
 				>

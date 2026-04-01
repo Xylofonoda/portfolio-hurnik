@@ -9,7 +9,7 @@ const PositionDialog: React.FunctionComponent<ModalProps> = (props) => {
 		<h2 className="top-0 text-lg md:text-xl p-3 font-bold text-center mb-3">
 			{props.positionTitle} <span className="font-semibold">({props.totalStayInPosition})</span>
 		</h2>
-		<div className="text-gray-300 p-3 text-md mb-3 w-full max-w-2xl mx-auto">
+		<div className="text-[var(--color-muted)] p-3 text-md mb-3 w-full max-w-2xl mx-auto">
 			<DescriptionList description={props.positionDescription} />
 		</div>
 		<div className="max-w-2xl mx-auto rounded-lg">
